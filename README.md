@@ -176,7 +176,7 @@ Generated calibration plots and MJD time-spot CSV files are included for the cam
 4. For maximum-likelihood analysis, update the ON/OFF FITS event-file paths.
 5. Run the detector simulation notebook directly if `numpy` and `matplotlib` are installed.
 
-## Interview Talking Points
+<!--  Interview Talking Points
 
 - Built reproducible scientific Python workflows for instrument calibration and polarimetry analysis.
 - Used domain-specific packet parsing to extract alignment telemetry from raw observation runs.
@@ -187,7 +187,7 @@ Generated calibration plots and MJD time-spot CSV files are included for the cam
 - Used ON/OFF exposure scaling to estimate source and background fractions.
 - Used a coarse-to-fine likelihood scan to make parameter estimation computationally manageable.
 - Built a geometric response simulation that traces scattering directions into a detector layout.
-- Incorporated energy-dependent attenuation and source-spectrum weighting into the detector response.
+- Incorporated energy-dependent attenuation and source-spectrum weighting into the detector response.-->##
 
 ## Possible Improvements
 
