@@ -151,6 +151,12 @@ The original raw run files and FITS event files are not included in this reposit
 
 Generated calibration plots and MJD time-spot CSV files are included for the camera-calibration project so the output can be reviewed without the full raw-data environment. The detector simulation notebook is self-contained apart from standard Python packages.
 
+## Related Publications
+
+- Matthew G. Baring, Jacob Casey, Sohee Chun, Ephraim Gau, Tomohiro Hakamata, Kun Hu, Daiki Ishi, Fabian Kislat, Mozsi Kiss, Merlin Kole, Henric Krawczynski, Haruki Kuramoto, Lindsey Lisalda, **Bingkun Liu**, et al. **Refined Constraints on the Hard X-ray Polarization of the Crab Pulsar and Nebula Derived from an Extended XL-Calibur Dataset.** arXiv:2604.15501, 2026. [arXiv](https://arxiv.org/abs/2604.15501) / [DOI](https://doi.org/10.48550/arXiv.2604.15501)
+
+  Relevance: This paper is an XL-Calibur collaboration result using the extended Crab dataset. The work in this repository is related to supporting and exploratory analysis around the same instrument and observation program, especially camera/pointing-offset inspection and polarimetry analysis prototyping. The camera-calibration notebooks connect most directly to the paper's discussion of imaging-detector pointing offsets and optical-axis stability, which are needed to define a consistent scattering geometry for polarization reconstruction. The polarization likelihood and detector-simulation notebooks are exploratory extensions of the same polarimetry analysis problem; they are not the production analysis pipeline used in the paper.
+
 ## Requirements
 
 - Python
