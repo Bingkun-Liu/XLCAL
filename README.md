@@ -2,8 +2,6 @@
 
 This repository collects two small XL-Calibur research-analysis projects. They focus on two related parts of the instrument-analysis workflow: back-looking camera calibration and polarimetry-oriented detector response / maximum-likelihood modeling.
 
-The repository is organized for interview review: each project is separated into its own folder, while this README gives the full project context, workflow, requirements, and talking points in one place.
-
 ## Project Overview
 
 ### 1. Back-Looking Camera Calibration
@@ -30,7 +28,7 @@ Example spatial distribution classification:
 
 ![Spatial distribution example](01-back-looking-camera-calibration/calibration%20result/spatial%20distribution/Crab%20Sec0%20visual.png)
 
-### 2. Polarization ML and Detector Simulation
+### 2. Polarization ML and Detector Simulation (Keep updating)
 
 Folder: [`02-polarization-ml-and-simulation`](02-polarization-ml-and-simulation)
 
@@ -100,7 +98,7 @@ This notebook estimates polarization parameters using event-level modulation fac
 
 Workflow:
 
-1. Reads ON and OFF XL-Calibur FITS event files.
+1. Reads ON and OFF XL-Calibur FITS event files (From HEASARC-NASA).
 2. Extracts event-level columns such as `Q`, `U`, `PI`, `WEIGHT`, and detector row/layer information.
 3. Converts Stokes-like event quantities into azimuthal angle:
 
@@ -129,7 +127,7 @@ where `PD` is polarization degree, `PA` is polarization angle, `mu[i]` is the ev
 
 ### `02-polarization-ml-and-simulation/beryllium_bar_detector_simulation.ipynb`
 
-This notebook builds a simplified geometric response model for a beryllium scattering rod inside a square detector boundary.
+This notebook builds a simplified geometric response model for a beryllium-scattering rod within a square detector boundary.
 
 Workflow:
 
@@ -187,11 +185,8 @@ Generated calibration plots and MJD time-spot CSV files are included for the cam
 - Used ON/OFF exposure scaling to estimate source and background fractions.
 - Used a coarse-to-fine likelihood scan to make parameter estimation computationally manageable.
 - Built a geometric response simulation that traces scattering directions into a detector layout.
-- Incorporated energy-dependent attenuation and source-spectrum weighting into the detector response.-->##
+- Incorporated energy-dependent attenuation and source-spectrum weighting into the detector response.-->
 
 ## Possible Improvements
 
-- Refactor repeated notebook logic into reusable Python modules.
-- Add a small sample or synthetic dataset so more notebooks can run outside the private XL-Calibur data environment.
-- Save generated plots from the polarization project into a `results/` folder for easier review on GitHub.
-- Add automated tests for packet filtering, spatial-case classification, detector indexing, and likelihood-model components.
+This project is ongoing and still being updated.
